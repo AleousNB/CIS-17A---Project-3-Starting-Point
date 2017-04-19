@@ -128,3 +128,14 @@ void Attack(const shared_ptr<Guild> guild)
 //extracredit
 //ouput display simplify
 //attackall simplify
+
+// attack all case 5 is what is required. 
+// individual attack (1-4) is extra credit
+// output invidual is extra credit
+// output all is required?
+
+// potential method for output all is through creating data member
+// -called class name and checking it in for loop
+
+//** extra credit for the project3part2 is fixing unable to go back to previous previous file
+// possible method of through use of some vector?
