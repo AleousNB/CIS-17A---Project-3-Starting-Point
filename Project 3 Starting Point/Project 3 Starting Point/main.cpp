@@ -63,10 +63,30 @@ void AddAdventurer(const shared_ptr<Guild> guild)
 	cin >> choice;
 	switch (choice)
 	{
-	case 1: guild->AddMage(name); break;
-	case 2: guild->AddRanger(name); break;
-	case 3: guild->AddPaladin(name); break;	
-	case 4: guild->AddWarrior(name); break;
+	case 1: //guild->AddMage(name); break;
+			{
+				auto character = make_shared<Mage>(name);
+				guild->AddAdventurer(character);
+				break;
+			}
+	case 2: //guild->AddRanger(name); break;
+			{
+				auto character = make_shared<Ranger>(name);
+				guild->AddAdventurer(character);
+				break;
+			}
+	case 3: //guild->AddPaladin(name); break;
+			{
+				auto character = make_shared<Paladin>(name);
+				guild->AddAdventurer(character);
+				break;
+			}
+	case 4: //guild->AddWarrior(name); break;
+			{
+				auto character = make_shared<Warrior>(name);
+				guild->AddAdventurer(character);
+				break;
+			}
 	default: cout << "Invalid choice!"; break;
 	}
 	system("pause");
@@ -97,3 +117,14 @@ void Attack(const shared_ptr<Guild> guild)
 	system("pause");
 	
 }
+
+//Notes for todo;
+//get rid of all individual add methods for guild
+//in main, all the adds for the case 1-4 do
+// void AddAdventurer(shared_ptr<Adventurer> adventurer);
+
+//auto character = make_shared<Mage>(name);
+//guild->AddAdventuerr(character)
+//extracredit
+//ouput display simplify
+//attackall simplify

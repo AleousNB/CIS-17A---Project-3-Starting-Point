@@ -1,10 +1,11 @@
 #pragma once
+#include <string>
 class Adventurer
 {
-private:
+protected:
 	std::string _name;
 public:
-	Adventurer();
+	Adventurer(std::string name);
 	~Adventurer();
 
 	std::string GetName() const { return _name; }
