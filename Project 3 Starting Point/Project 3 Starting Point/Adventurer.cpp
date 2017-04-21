@@ -2,10 +2,9 @@
 
 
 
-Adventurer::Adventurer(std::string name) : _name(name)
+Adventurer::Adventurer(std::string name, std::string classType) : _name(name), _classType(classType)
 {
 }
-
 
 Adventurer::~Adventurer()
 {

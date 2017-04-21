@@ -2,7 +2,7 @@
 
 
 
-Warrior::Warrior(std::string name) : Adventurer(name)
+Warrior::Warrior(std::string name, std::string classType) : Adventurer(name, classType)
 {
 }
 

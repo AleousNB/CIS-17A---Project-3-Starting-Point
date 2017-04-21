@@ -2,7 +2,7 @@
 
 
 
-Paladin::Paladin(std::string name) : Adventurer(name)
+Paladin::Paladin(std::string name, std::string classType) : Adventurer(name, classType)
 {
 }
 

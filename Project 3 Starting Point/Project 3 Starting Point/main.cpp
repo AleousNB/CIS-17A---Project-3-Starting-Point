@@ -65,25 +65,25 @@ void AddAdventurer(const shared_ptr<Guild> guild)
 	{
 	case 1: //guild->AddMage(name); break;
 			{
-				auto character = make_shared<Mage>(name);
+				auto character = make_shared<Mage>(name, "Mage");
 				guild->AddAdventurer(character);
 				break;
 			}
 	case 2: //guild->AddRanger(name); break;
 			{
-				auto character = make_shared<Ranger>(name);
+				auto character = make_shared<Ranger>(name, "Ranger");
 				guild->AddAdventurer(character);
 				break;
 			}
 	case 3: //guild->AddPaladin(name); break;
 			{
-				auto character = make_shared<Paladin>(name);
+				auto character = make_shared<Paladin>(name, "Paladin");
 				guild->AddAdventurer(character);
 				break;
 			}
 	case 4: //guild->AddWarrior(name); break;
 			{
-				auto character = make_shared<Warrior>(name);
+				auto character = make_shared<Warrior>(name, "Warrior");
 				guild->AddAdventurer(character);
 				break;
 			}
@@ -139,4 +139,4 @@ void Attack(const shared_ptr<Guild> guild)
 
 //** extra credit for the project3part2 is fixing unable to go back to previous previous file
 // possible method of through use of some vector?
-erasethis
+      

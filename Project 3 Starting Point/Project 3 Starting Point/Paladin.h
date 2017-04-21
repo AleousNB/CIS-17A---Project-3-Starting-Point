@@ -6,7 +6,7 @@ class Paladin : public Adventurer
 private:
 	
 public:
-	Paladin(std::string name);
+	Paladin(std::string name, std::string classType);
 	~Paladin();
 
 	

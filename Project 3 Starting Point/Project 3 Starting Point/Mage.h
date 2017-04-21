@@ -6,7 +6,7 @@ class Mage : public Adventurer
 private:
 	
 public:
-	Mage(std::string name);
+	Mage(std::string name, std::string classType);
 	~Mage();
 
 	
